@@ -3,32 +3,41 @@ $bar_bg: gray;
 $green: #4caf50;
 $blue: #2196f3;
 
-.bar{
+@mixin couleur-bar($couleur) {
+  .bar__fill {
+    background: $couleur;
+  }
+}
+
+.bar {
   width: 100%;
   max-width: 600px;
 
-  &__label{
+  &__label {
     margin: 0 0 8px;
     font-size: 1rem;
     opacity: 0.7;
   }
 
-  &__track{
+  &__track {
     height: 10px;
     background-color: $bar_bg;
     border-radius: 10px;
     overflow: hidden;
   }
 
-  &__fill{
+  &__fill {
     height: 100%;
     width: calc(var(--value) * 1%);
     background: $green;
   }
 
-  &__value{
+  &__value {
     margin: 8px 0 0;
     font-size: 1rem;
     opacity: 0.7;
   }
 }
+
+.bar--vie    { @include couleur-bar($green); }
+.bar--energie { @include couleur-bar($blue); }
