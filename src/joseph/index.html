@@ -11,62 +11,123 @@
 
 <body>
   <a href="/">← Retour</a>
-    <div class="card-user__colonnes">
+  <div class="card-user">
+    <header class="profil">
+      <div class="profil__avatar">JB</div>
       <div>
-        <h2 class="card-user__colonnes__title">Compétences</h2>
-        <div class="competence competence--evasion">
-          <span class="competence__icone">↺</span>
-          <div>
-            <h3 class="competence__titre">Manœuvre d'évasion</h3>
-            <p class="competence__texte">Esquive rapidement une attaque ennemie.</p>
+        <h1 class="profil__nom">Joseph Baert</h1>
+        <p class="profil__role">Pilote</p>
+        <div class="profil__badges">
+          <span class="badge badge--or">Niveau 5</span>
+          <span class="badge">Lieutenant</span>
+        </div>
+      </div>
+    </header>
+    <div class="card-user__colonnes">
+      <div class="bar bar--vie">
+        <p class="bar__label">Points de vie</p>
+        <div class="bar__track">
+          <div class="bar__fill" style="--value: 100"></div>
+        </div>
+        <p class="bar__value">120 / 120</p>
+      </div>
+      <div class="bar bar--energie">
+        <p class="bar__label">Points d'énergie</p>
+        <div class="bar__track">
+          <div class="bar__fill" style="--value: 71"></div>
+        </div>
+        <p class="bar__value">85 / 120</p>
+      </div>
+    </div>
+
+    <div class="card-user__section">
+      <p class="card-user__description">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
+        asperiores vel error quis harum nobis. Nisi sint saepe eos accusamus
+        sit consectetur, esse incidunt at, assumenda officiis, dolorem quidem.
+        Voluptatum.
+      </p>
+    </div>
+
+    <div class="card-user__section">
+      <div class="card-user__colonnes">
+        <div>
+          <h2 class="card-user__colonnes__title">Compétences</h2>
+          <div class="competence competence--evasion">
+            <span class="competence__icone">↺</span>
+            <div>
+              <h3 class="competence__titre">Manœuvre d'évasion</h3>
+              <p class="competence__texte">
+                Esquive rapidement une attaque ennemie.
+              </p>
+            </div>
+          </div>
+
+          <div class="competence competence--reparation">
+            <span class="competence__icone">⚙</span>
+            <div>
+              <h3 class="competence__titre">Réparation d'urgence</h3>
+              <p class="competence__texte">
+                Restaure temporairement l'intégrité du vaisseau.
+              </p>
+            </div>
           </div>
         </div>
 
-        <div class="competence competence--reparation">
-          <span class="competence__icone">⚙</span>
-          <div>
-            <h3 class="competence__titre">Réparation d'urgence</h3>
-            <p class="competence__texte">Restaure temporairement l'intégrité du vaisseau.</p>
+        <div>
+          <h2 class="card-user__colonnes__title">Équipements</h2>
+          <div class="equipement">
+            <p class="equipement__texte">Combinaison de vol</p>
           </div>
-        </div>
-      </div>
-      <div>
-        <h2 class="card-user__colonnes__title">Équipements</h2>
-        <div class="equipement">
-          <p class="equipement__texte">Équipement 1</p>
+          <div class="equipement">
+            <p class="equipement__texte">Kit de réparation</p>
+          </div>
+          <div class="equipement">
+            <p class="equipement__texte">Blaster</p>
+          </div>
+          <div class="equipement">
+            <p class="equipement__texte">Ration de survie</p>
+          </div>
+          <div class="equipement">
+            <p class="equipement__texte">Communicateur longue portée</p>
+          </div>
+          <div class="equipement">
+            <p class="equipement__texte">Scanner portable</p>
+          </div>
         </div>
       </div>
     </div>
+
     <div class="card-user__section">
-      <h2 class="card-user__section__title">Statistiques</h2>
+      <h2 class="card-user__colonnes__title">Statistiques</h2>
       <div class="card-user__stats">
-        <div class="bar">
-          <p class="bar__label"> Point de vie </p>
+        <div class="bar bar--stat">
+          <p class="bar__label">Pilotage</p>
           <div class="bar__track">
-            <div class="bar__fill"></div>
+            <div class="bar__fill" style="--value: 85"></div>
           </div>
-          <p class="bar__value">120 / 120</p>
+          <p class="bar__value">85</p>
         </div>
-        <div class="bar">
-          <p class="bar__label"> Point de vie </p>
+        <div class="bar bar--stat">
+          <p class="bar__label">Précision</p>
           <div class="bar__track">
-            <div class="bar__fill"></div>
+            <div class="bar__fill" style="--value: 72"></div>
           </div>
-          <p class="bar__value">120 / 120</p>
+          <p class="bar__value">72</p>
         </div>
-        <div class="bar">
-          <p class="bar__label"> Point de vie </p>
+        <div class="bar bar--stat">
+          <p class="bar__label">Réflexes</p>
           <div class="bar__track">
-            <div class="bar__fill"></div>
+            <div class="bar__fill" style="--value: 91"></div>
           </div>
-          <p class="bar__value">120 / 120</p>
+          <p class="bar__value">91</p>
         </div>
-        <div class="bar">
-          <p class="bar__label"> Point de vie </p>
+        <div class="bar bar--stat">
+          <p class="bar__label">Ingéniosité</p>
           <div class="bar__track">
-            <div class="bar__fill"></div>
+            <div class="bar__fill" style="--value: 78"></div>
           </div>
-          <p class="bar__value">120 / 120</p>
+          <p class="bar__value">78</p>
         </div>
       </div>
     </div>

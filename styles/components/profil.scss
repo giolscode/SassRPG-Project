@@ -1,0 +1,63 @@
+$or: #f2b632;
+$fond-avatar: #232b45;
+$texte: #e6e9f2;
+$bordure: #2e3650;
+
+.profil {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding-bottom: 12px;
+
+  &__avatar {
+    display: grid;
+    place-items: center;
+    width: 110px;
+    height: 110px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    border: 2px solid $or;
+    background: $fond-avatar;
+    color: $or;
+    font-size: 2.2rem;
+    font-weight: 700;
+  }
+
+  &__nom {
+    margin: 0;
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: $texte;
+  }
+
+  &__role {
+    margin: 4px 0 12px;
+    color: $or;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+  }
+
+  &__badges {
+    display: flex;
+    gap: 10px;
+  }
+}
+
+.badge {
+  padding: 4px 14px;
+  border-radius: 999px;
+  border: 1px solid $bordure;
+  background: #1c2338;
+  color: $texte;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+
+  &--or {
+    border-color: rgba($or, 0.5);
+    background: rgba($or, 0.15);
+    color: $or;
+  }
+}

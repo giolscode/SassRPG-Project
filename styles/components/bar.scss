@@ -2,6 +2,7 @@
 $bar_bg: gray;
 $green: #4caf50;
 $blue: #2196f3;
+$red: #e5484d;
 
 @mixin couleur-bar($couleur) {
   .bar__fill {
@@ -41,3 +42,4 @@ $blue: #2196f3;
 
 .bar--vie    { @include couleur-bar($green); }
 .bar--energie { @include couleur-bar($blue); }
+.bar--stat    { @include couleur-bar($red); }
