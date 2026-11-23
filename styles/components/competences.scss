@@ -1,0 +1,39 @@
+
+$bleu: #3cc0f5;
+$vert: #2fbf71;
+
+@mixin couleur-competence($couleur) {
+  border-left-color: $couleur;
+
+  .competence__icone {
+    color: $couleur;
+    background: rgba($couleur, 0.15);
+  }
+}
+
+.competence {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 20px;
+  background: #1a2236;
+  border: 1px solid #262f45;
+  border-left: 3px solid $bleu;
+  border-radius: 8px;
+
+  &__icone {
+    display: grid;
+    place-items: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    color: $bleu;
+    background: rgba($bleu, 0.15);
+  }
+
+  &__titre { margin: 0; font-size: 1.05rem; color: #e6e9f2; }
+  &__texte { margin: 4px 0 0; color: #8b93a8; }
+}
+
+.competence--evasion    { @include couleur-competence($bleu); }
+.competence--reparation { @include couleur-competence($vert); }
