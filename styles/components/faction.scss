@@ -1,0 +1,43 @@
+
+$or: #d4a63a;
+
+@mixin couleur-faction($couleur) {
+  border-color: rgba($couleur, 0.45);
+  background: linear-gradient(90deg, rgba($couleur, 0.16), rgba($couleur, 0.03));
+
+  .faction__icone {
+    color: $couleur;
+  }
+}
+
+.faction {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 28px;
+  border: 1px solid;
+  border-radius: 8px;
+
+  &__icone {
+    width: 36px;
+    height: 36px;
+    flex-shrink: 0;
+  }
+
+  &__label {
+    margin: 0;
+    font-size: 0.8rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #8b93a8;
+  }
+
+  &__nom {
+    margin: 2px 0 0;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #e6e9f2;
+  }
+}
+
+.faction--alliance { @include couleur-faction($or); }
