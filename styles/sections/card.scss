@@ -17,7 +17,7 @@
     grid-template-columns: 1fr 1fr;
     gap: 32px;
 
-    &__title{
+    &__title {
       font-size: 1.5rem;
       font-weight: 600;
       color: #efe415;
@@ -29,4 +29,11 @@
     font-family: 'Roboto', sans-serif;
     color: #939191;
   }
+  
+  &__stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+  }
+
 }
