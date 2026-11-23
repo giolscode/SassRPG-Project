@@ -1,0 +1,26 @@
+.card-user {
+  max-width: 880px;
+  margin: 40px auto;
+  padding: 40px;
+  background: #131a2b;
+  border: 1px solid #262f45;
+  border-radius: 12px;
+
+  &__section {
+    padding-top: 24px;
+    margin-top: 24px;
+    border-top: 1px solid #262f45;
+  }
+
+  &__colonnes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+
+    &__title{
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: #efe415;
+    }
+  }
+}

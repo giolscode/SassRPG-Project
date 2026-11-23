@@ -35,5 +35,9 @@ $vert: #2fbf71;
   &__texte { margin: 4px 0 0; color: #8b93a8; }
 }
 
+.competence + .competence {
+  margin-top: 12px;
+}
+
 .competence--evasion    { @include couleur-competence($bleu); }
 .competence--reparation { @include couleur-competence($vert); }

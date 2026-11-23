@@ -1,0 +1,21 @@
+
+$bleu: #3cc0f5;
+$vert: #2fbf71;
+
+
+.equipement {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 20px;
+  background: #1a2236;
+  border: 1px solid #262f45;
+  border-radius: 8px;
+  gap: 16px;
+
+  &__texte { margin: 4px 0 0; color: #8b93a8; }
+}
+
+.equipement + .equipement {
+  margin-top: 12px;
+}
