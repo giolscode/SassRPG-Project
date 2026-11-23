@@ -1,0 +1,24 @@
+{
+  "name": "sassrpg-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/giolscode/SassRPG-Project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/giolscode/SassRPG-Project/issues"
+  },
+  "homepage": "https://github.com/giolscode/SassRPG-Project#readme",
+  "devDependencies": {
+    "sass": "^1.108.2"
+  }
+}
