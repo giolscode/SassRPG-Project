@@ -1,15 +1,30 @@
+$raretes: (
+  commun: #9ca3af,
+  peu-commun: #2fbf71,
+  rare: #3c8cf5,
+  epique: #9b7bf2,
+  legendaire: #f2a93b,
+);
+
+@each $nom, $couleur in $raretes {
+  .equipement--#{$nom} {
+    border: 1px solid $couleur;
+
+    .equipement__texte {
+      color: $couleur;
+    }
+  }
+}
+
 .equipement {
   display: flex;
   align-items: center;
   gap: 16px;
   padding: 16px 20px;
   background: #1a2236;
-  border: 1px solid #262f45;
   border-radius: 8px;
-
-  &__texte { margin: 0; color: #e5e7eb; }
-}
-
-.equipement + .equipement {
   margin-top: 12px;
+
+  &__texte { margin: 0;}
 }
+
