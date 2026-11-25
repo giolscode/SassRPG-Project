@@ -1,6 +1,8 @@
 
 $bleu: #3cc0f5;
 $vert: #2fbf71;
+$marron: #8b4513;
+$rouge: #ff4d4d;
 
 @mixin couleur-competence($couleur) {
   border-left-color: $couleur;
@@ -41,3 +43,5 @@ $vert: #2fbf71;
 
 .competence--evasion    { @include couleur-competence($bleu); }
 .competence--reparation { @include couleur-competence($vert); }
+.competence--destruction { @include couleur-competence($rouge); }
+.competence--distraction { @include couleur-competence($marron); }
