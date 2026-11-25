@@ -1,97 +1,164 @@
 <!doctype html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SassRPG - Giovanni</title>
-    <link rel="stylesheet" href="/src/body.scss" />
-    <link rel="stylesheet" href="./style.scss" />
-  </head>
 
-  <body>
-    <a href="/">← Retour</a>
-    <h1>Giovanni</h1>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SassRPG - Giovanni</title>
+  <link rel="stylesheet" href="/src/body.scss" />
+  <link rel="stylesheet" href="./style.scss" />
+</head>
 
-    <div class="card-user">
+<body>
+  <a href="/">← Retour</a>
+  <div class="card-user">
+    <header class="profil">
+      <div class="profil__avatar">GL</div>
+      <div>
+        <h1 class="profil__nom">Giovanni LOSAT</h1>
+        <p class="profil__role">Co-pilote</p>
+        <div class="profil__badges">
+          <span class="badge badge--or">Niveau 5</span>
+          <span class="badge">Maréchal</span>
+        </div>
+      </div>
+    </header>
 
-     
-      <div class="card-user__section">
+    <div class="card-user__section">
         <div class="faction faction--alliance">
           <svg class="faction__icone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" aria-hidden="true">
             <path d="M12 2.5 4.5 5.5v6c0 4.6 3.1 8.4 7.5 10 4.4-1.6 7.5-5.4 7.5-10v-6L12 2.5Z" />
           </svg>
           <div>
             <p class="faction__label">Faction</p>
-            <h3 class="faction__nom">Milky Way Alliance</h3>
+            <h3 class="faction__nom">Martinique Alliance</h3>
           </div>
         </div>
       </div>
-  
-      <div class="card-user__section">
-        <div class="card-user__colonnes">
-          <div class="bar bar--vie">
-            <p class="bar__label">Points de vie</p>
-            <div class="bar__track">
-              <div class="bar__fill" style="--value: 100"></div>
-            </div>
-            <p class="bar__value">120 / 120</p>
-          </div>
-          <div class="bar bar--energie">
-            <p class="bar__label">Points d'énergie</p>
-            <div class="bar__track">
-              <div class="bar__fill" style="--value: 71"></div>
-            </div>
-            <p class="bar__value">85 / 120</p>
-          </div>
+    <div class="card-user__colonnes">
+      <div class="bar bar--vie">
+        <p class="bar__label">Points de vie</p>
+        <div class="bar__track">
+          <div class="bar__fill" style="--value: 100"></div>
         </div>
+        <p class="bar__value">120 / 120</p>
       </div>
-
-      <div class="card-user__section">
-        <p class="card-user__description">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
-          asperiores vel error quis harum nobis. Nisi sint saepe eos accusamus
-          sit consectetur, esse incidunt at, assumenda officiis, dolorem quidem.
-          Voluptatum.
-        </p>
-      </div>
-
-      <div class="card-user__section">
-        <div class="card-user__colonnes">
-          <div>
-            <h2 class="card-user__colonnes__title">Compétences</h2>
-            <div class="competence competence--evasion">
-              <span class="competence__icone">↺</span>
-              <div>
-                <h3 class="competence__titre">Manœuvre d'évasion</h3>
-                <p class="competence__texte">
-                  Esquive rapidement une attaque ennemie.
-                </p>
-              </div>
-            </div>
-
-            <div class="competence competence--reparation">
-              <span class="competence__icone">⚙</span>
-              <div>
-                <h3 class="competence__titre">Réparation d'urgence</h3>
-                <p class="competence__texte">
-                  Restaure temporairement l'intégrité du vaisseau.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div>
-            <h2 class="card-user__colonnes__title">Équipements</h2>
-            <div class="equipement">
-              <p class="equipement__texte">Équipement 1</p>
-            </div>
-          </div>
+      <div class="bar bar--energie">
+        <p class="bar__label">Points d'énergie</p>
+        <div class="bar__track">
+          <div class="bar__fill" style="--value: 71"></div>
         </div>
-      </div>
-
-      <div class="card-user__section">
-        <h2>Historique</h2>
+        <p class="bar__value">85 / 120</p>
       </div>
     </div>
-  </body>
+
+    <div class="card-user__section">
+      <p class="card-user__description">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
+        asperiores vel error quis harum nobis. Nisi sint saepe eos accusamus
+        sit consectetur, esse incidunt at, assumenda officiis, dolorem quidem.
+        Voluptatum.
+      </p>
+    </div>
+
+    <div class="card-user__section">
+      <div class="card-user__colonnes">
+        <div>
+          <h2 class="card-user__colonnes__title">Compétences</h2>
+          <div class="competence competence--evasion">
+            <span class="competence__icone">↺</span>
+            <div>
+              <h3 class="competence__titre">Manœuvre d'évasion</h3>
+              <p class="competence__texte">
+                Esquive rapidement une attaque ennemie.
+              </p>
+            </div>
+          </div>
+
+          <div class="competence competence--reparation">
+            <span class="competence__icone">⚙</span>
+            <div>
+              <h3 class="competence__titre">Réparation d'urgence</h3>
+              <p class="competence__texte">
+                Restaure temporairement l'intégrité du vaisseau.
+              </p>
+            </div>
+          </div>
+          <div class="competence competence--destruction">
+            <span class="competence__icone">💥</span>
+            <div>
+              <h3 class="competence__titre">Destruction</h3>
+              <p class="competence__texte">
+                Inflige des dégâts importants à l'ennemi.
+              </p>
+            </div>
+          </div>
+          <div class="competence competence--distraction">
+            <span class="competence__icone">🎭</span>
+            <div>
+              <h3 class="competence__titre">Distraction</h3>
+              <p class="competence__texte">
+                Distrait l'ennemi pour réduire sa précision.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <h2 class="card-user__colonnes__title">Équipements</h2>
+          <div class="equipement">
+            <p class="equipement__texte">Combinaison de vol</p>
+          </div>
+          <div class="equipement">
+            <p class="equipement__texte">Kit de réparation</p>
+          </div>
+          <div class="equipement">
+            <p class="equipement__texte">Blaster</p>
+          </div>
+          <div class="equipement">
+            <p class="equipement__texte">Ration de survie</p>
+          </div>
+          <div class="equipement">
+            <p class="equipement__texte">Communicateur longue portée</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card-user__section">
+      <h2 class="card-user__colonnes__title">Statistiques</h2>
+      <div class="card-user__stats">
+        <div class="bar bar--stat">
+          <p class="bar__label">Pilotage</p>
+          <div class="bar__track">
+            <div class="bar__fill" style="--value: 85"></div>
+          </div>
+          <p class="bar__value">85</p>
+        </div>
+        <div class="bar bar--stat">
+          <p class="bar__label">Précision</p>
+          <div class="bar__track">
+            <div class="bar__fill" style="--value: 72"></div>
+          </div>
+          <p class="bar__value">72</p>
+        </div>
+        <div class="bar bar--stat">
+          <p class="bar__label">Réflexes</p>
+          <div class="bar__track">
+            <div class="bar__fill" style="--value: 91"></div>
+          </div>
+          <p class="bar__value">91</p>
+        </div>
+        <div class="bar bar--stat">
+          <p class="bar__label">Ingéniosité</p>
+          <div class="bar__track">
+            <div class="bar__fill" style="--value: 78"></div>
+          </div>
+          <p class="bar__value">78</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
 </html>

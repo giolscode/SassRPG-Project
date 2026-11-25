@@ -3,6 +3,9 @@ $bar_bg: gray;
 $green: #4caf50;
 $blue: #2196f3;
 $red: #e5484d;
+$fill-duration: 0.8s;
+$fill-stagger: 0.15s;
+$stat-count: 4;
 
 @mixin couleur-bar($couleur) {
   .bar__fill {
@@ -43,3 +46,21 @@ $red: #e5484d;
 .bar--vie    { @include couleur-bar($green); }
 .bar--energie { @include couleur-bar($blue); }
 .bar--stat    { @include couleur-bar($red); }
+
+@keyframes bar-fill {
+  from {
+    width: 0;
+  }
+}
+
+.bar--stat {
+  .bar__fill {
+    animation: bar-fill $fill-duration ease-out backwards;
+  }
+
+  @for $i from 1 through $stat-count {
+    &:nth-child(#{$i}) .bar__fill {
+      animation-delay: ($i - 1) * $fill-stagger;
+    }
+  }
+}
